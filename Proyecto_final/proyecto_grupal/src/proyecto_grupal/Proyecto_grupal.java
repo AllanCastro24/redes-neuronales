@@ -46,14 +46,14 @@ public class Proyecto_grupal {
             final double actual[] = network.computeOutputs(INPUT[i]);
             System.out.println(INPUT[i][0] + "," + INPUT[i][1]+", actual= " + actual[0] + " ,ideal= "  + IDEAL[i][0]);
             salida = actual[0];
+            if(salida <= 0.33){
+            System.out.println("El canal es: Disney XD");
+            }else if(salida > 0.33 && salida <0.67){
+                System.out.println("El canal es: Cartoon Network");
+            }else{
+                System.out.println("El canal es: Nick Classic");
+            }
         }
         
-        if(salida <= 0.33){
-            System.out.println("El canal es: Disney XD");
-        }else if(salida > 0.33 && salida <0.67){
-            System.out.println("El canal es: Cartoon Network");
-        }else{
-            System.out.println("El canal es: Nick Classic");
-        }
     }
 }

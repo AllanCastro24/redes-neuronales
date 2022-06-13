@@ -33,8 +33,8 @@ public class ErrorCalculation {
 	 * @return The current error for the neural network.
 	 */
 	public double calculateRMS() {
-		final double err = Math.sqrt(this.globalError / (this.setSize));
-		return err;
+		//final double err = Math.sqrt(this.globalError / (this.setSize));
+		return this.globalError / (this.setSize);
 
 	}
 
