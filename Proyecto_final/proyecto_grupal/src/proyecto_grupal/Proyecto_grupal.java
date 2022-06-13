@@ -25,21 +25,21 @@ public class Proyecto_grupal {
     protected final static double RATE = 0.5; //Tasa de aprendizaje
     protected final static double MOMENTUM = 0.7; //Momentum
     
-    public static double IDEAL[][] = { { 1 }, { 1 }, { 1 }};
+    public static double IDEAL[][] = { { 0.33 }, { 0.66 }, { 1 }};
 
-    public static double INPUT[][] ={ { 0.8, -0.2}, { 0.7, 0.05}, { 1, 0.2}, { 0.21, 0.43}, { -0.76, 0.55}, {0.12, -0.32} };
+    public static double INPUT[][] ={ {0.8, -0.2,0.0,0.0,0.0,0.0}, {0.8, -0.2,0.0,0.0,0.0,0.0}, {0.8, -0.2,0.0,0.0,0.0,0.0}};
     
-    public static void main(String[] args) throws IOException {
+    public static void main(String[] args) {
         
         long startTime = System.currentTimeMillis();
         final FeedforwardNetwork network = new FeedforwardNetwork();
-        network.addLayer(new FeedforwardLayer(2));
-        network.addLayer(new FeedforwardLayer(2));
-        network.addLayer(new FeedforwardLayer(1));
+        network.addLayer(new FeedforwardLayer(NUM_INPUT));
+        network.addLayer(new FeedforwardLayer(NUM_HIDDEN));
+        network.addLayer(new FeedforwardLayer(NUM_OUTPUT));
       
         network.reset();
         // train the neural network
-        final Train train = new Backpropagation(network, INPUT, IDEAL, 0.7, 0.3);
+        final Train train = new Backpropagation(network, INPUT, IDEAL, RATE, MOMENTUM);
         int epoch = 0;
         do {
             train.iteration();
