@@ -54,6 +54,5 @@ public class Proyecto_grupal {
                 System.out.println("El canal es: Nick Classic");
             }
         }
-        
     }
 }
