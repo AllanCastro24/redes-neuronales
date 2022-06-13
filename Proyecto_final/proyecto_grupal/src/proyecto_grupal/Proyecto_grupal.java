@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
 package proyecto_grupal;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.FeedforwardLayer;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.FeedforwardNetwork;
@@ -13,11 +9,9 @@ import com.heatonresearch.book.introneuralnet.neural.prune.Prune;
 import com.heatonresearch.book.introneuralnet.common.ReadCSV;
 import java.io.IOException;
 /**
- *
  * @author acast
  */
 public class Proyecto_grupal {
-
     //Variables del sistema
     protected final static int NUM_INPUT = 6; //Neuronas de entrada
     protected final static int NUM_OUTPUT = 1; //Neuronas de salida
@@ -27,11 +21,10 @@ public class Proyecto_grupal {
     
     public static double IDEAL[][] = { { 0.33 }, { 0.66 }, { 1 }};
 
-    public static double INPUT[][] ={ {0.8, -0.2,0.0,0.0,0.0,0.0}, {0.8, -0.2,0.0,0.0,0.0,0.0}, {0.8, -0.2,0.0,0.0,0.0,0.0}};
+    public static double INPUT[][] ={ {0.9, 0.9,0.6,.6,0.6,0.9}, {0.6, 0.3,0.6,0.3,0.3,0.6}, {0.6, 0.9, 0.9, 0.6, 0.9, 0.6}};
     
     public static void main(String[] args) {
         
-        long startTime = System.currentTimeMillis();
         final FeedforwardNetwork network = new FeedforwardNetwork();
         network.addLayer(new FeedforwardLayer(NUM_INPUT));
         network.addLayer(new FeedforwardLayer(NUM_HIDDEN));
@@ -45,18 +38,15 @@ public class Proyecto_grupal {
             train.iteration();
             System.out.println("Epoca #" + (epoch+1) + " MSE: " + train.getError());
             epoch++;
-        } while ((train.getError() > 0.00001) );
+        } while ((train.getError() > 0.01) );
         // test the neural network
         System.out.println("Resultado de la Red Neuronal: ");
         double salida = 0;
         for (int i = 0; i < IDEAL.length; i++) {
             final double actual[] = network.computeOutputs(INPUT[i]);
             System.out.println(INPUT[i][0] + "," + INPUT[i][1]+", actual= " + actual[0] + " ,ideal= "  + IDEAL[i][0]);
-            salida = actual[i];
+            salida = actual[0];
         }
-        System.out.println("Tiempo: " + (System.currentTimeMillis() - startTime) + " milisegundos");
-        
-        
         
         if(salida <= 0.33){
             System.out.println("El canal es: Disney XD");
