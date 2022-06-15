@@ -21,7 +21,7 @@ public class Proyecto_grupal {
     protected final static double RATE = 0.5; //Tasa de aprendizaje
     protected final static double MOMENTUM = 0.7; //Momentum
     
-    public static double IDEAL[][] = { { 0.33 }, { 0.66 }, { 1 }};
+    public static double IDEAL[][] = { { 0.3 }, { 0.6 }, { 1 }};
     public static double INPUT_FINAL[][]={ {0,0,0,0,0,0}, {0,0,0,0,0,0}, {0,0,0,0,0,0}};
     public static double INPUT[][] = { {0,0,0,0,0,0}, {0,0,0,0,0,0}, {0,0,0,0,0,0}};
     
@@ -124,11 +124,11 @@ public class Proyecto_grupal {
             salida = actual[0];
         }
         
-        if(salida <= 0.33){
+        if(salida <= 0.3){
                 System.out.println("El canal es: Disney XD");
-        }else if(salida > 0.33 && salida <0.67){
+        }else if(salida > 0.3 && salida <=0.6){
                 System.out.println("El canal es: Cartoon Network");
-        }else if(salida > 0.66 && salida <1.1){
+        }else if(salida > 0.6 && salida <=1){
                 System.out.println("El canal es: Nick Classic");
         }
     }
@@ -136,11 +136,11 @@ public class Proyecto_grupal {
     public static double generar_umbral(int resultado){
         double umbral = 0;
         if(resultado == 1){
-            umbral = Math.random() * ( 0.33 - 0.1 );
+            umbral = Math.random() * ( 0.3 - 0 );
         }else if (resultado == 2){
-            umbral = Math.random() * ( 0.66 - 0.34 );
+            umbral = Math.random() * ( 0.6 - 0.3 );
         }else if (resultado == 3){
-            umbral = Math.random() * ( 1 - 0.67 );
+            umbral = Math.random() * ( 1 - 0.6 );
         }
         
         return umbral;
@@ -148,12 +148,12 @@ public class Proyecto_grupal {
     
     public static void generar_entrenamiento(int num_entrenamiento){
         for (int i = 0;i<num_entrenamiento;i++){
-            INPUT[i][0] = Math.random() * ( 1.0 - 0.0 );
-            INPUT[i][1] = Math.random() * ( 1.0 - 0.0 );
-            INPUT[i][2] = Math.random() * ( 1.0 - 0.0 );
-            INPUT[i][3] = Math.random() * ( 1.0 - 0.0 );
-            INPUT[i][4] = Math.random() * ( 1.0 - 0.0 );
-            INPUT[i][5] = Math.random() * ( 1.0 - 0.0 );
+            INPUT[i][0] = Math.random() * ( 1 - 0 );
+            INPUT[i][1] = Math.random() * ( 1 - 0 );
+            INPUT[i][2] = Math.random() * ( 1 - 0 );
+            INPUT[i][3] = Math.random() * ( 1 - 0 );
+            INPUT[i][4] = Math.random() * ( 1 - 0 );
+            INPUT[i][5] = Math.random() * ( 1 - 0 );
         }
     }
 }

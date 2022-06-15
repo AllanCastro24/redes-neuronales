@@ -13,6 +13,8 @@ public class XOR {
 	public static void main(final String args[]) throws IOException {
 		final ReadCSV archivo = new ReadCSV("entrada.csv");		
 		filas = archivo.rows("entrada.csv");
+		final ReadCSV archivo2 = new ReadCSV("train.csv");
+                filas = archivo.rows("train.csv");
 		final FeedforwardNetwork network = new FeedforwardNetwork();
 		network.addLayer(new FeedforwardLayer(6));          					
 		network.addLayer(new FeedforwardLayer(5));								
@@ -38,8 +40,28 @@ public class XOR {
 			csv[j][6] = ideal;
 			j += 1;
 		}
+                int t=0;
+                while (archivo2.next()) {
+                        //Segundo archivo para prueva
+                        final double bp1 = Double.parseDouble(archivo2.get("pregunta1"));
+			final double bp2 = Double.parseDouble(archivo2.get("pregunta2"));
+			final double bp3 = Double.parseDouble(archivo2.get("pregunta3"));
+			final double bp4 = Double.parseDouble(archivo2.get("pregunta4"));
+			final double bp5 = Double.parseDouble(archivo2.get("pregunta5"));
+			final double bp6 = Double.parseDouble(archivo2.get("pregunta6"));
+			final double bideal = Double.parseDouble(archivo2.get("ideal"));
+			csv2[t][0] = bp1;
+			csv2[t][1] = bp2;
+			csv2[t][2] = bp3;
+			csv2[t][3] = bp4;
+			csv2[t][4] = bp5;
+			csv2[t][5] = bp6;
+			csv2[t][6] = bideal;
+                        t += 1;
+                }
 		//se manda a llamar para guardar en otra matriz
 		final double xorData[][] = getGrid2();
+                final double xorData2[][] = getGrid3();
                 final double xorIdeal[][] = getIdeal();
         //se manda a entrenar con el metodo del recocio
                 final NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(network, xorData, xorIdeal, 10, 2, 50000);
@@ -49,24 +71,25 @@ public class XOR {
 			train.iteration();
 			System.out.println("Epoch #" + epoch + " Error:" + train.getError());
 			epoch++;
-		} while ((epoch < 5000) && (train.getError() > 0.001));
-		System.out.println("Resultados de la red:");
+		} while ((epoch < 600) && (train.getError() > 0.001));
+		System.out.println("Neural Network Results:");
+		//se presenta los datos a calar y el canal que recomienda
                 for (int i = 0; i < xorIdeal.length -1; i++) {
 			final double actual[] = network.computeOutputs(xorData[i]);
-			if ((actual[0] >= 0) && (actual[0] <= 0.33)){
+			if ((actual[0] >= 0) && (actual[0] <= 0.3)){
                            System.out.println(xorData[i][0] + "," + xorData[i][1]+ "," + xorData[i][2]+ "," + xorData[i][3]+ "," + xorData[i][4]+ "," + xorData[i][5]
 					+ ", actual=" + actual[0] + ",ideal=" + xorIdeal[i][0] + ",Su recomendación es: Disney XD");
-                        }else if((actual[0] > 0.33) && (actual[0] <= 0.66)){
+                        }else if((actual[0] > 0.3) && (actual[0] <= 0.6)){
                         System.out.println(xorData[i][0] + "," + xorData[i][1]+ "," + xorData[i][2]+ "," + xorData[i][3]+ "," + xorData[i][4]+ "," + xorData[i][5]
 					+ ", actual=" + actual[0] + ",ideal=" + xorIdeal[i][0] + ",Su recomendación es: Cartoon Network");
-                        }else if((actual[0] > 0.66) && (actual[0] <= 1)){
+                        }else if((actual[0] > 0.6) && (actual[0] <= 1)){
                         System.out.println(xorData[i][0] + "," + xorData[i][1]+ "," + xorData[i][2]+ "," + xorData[i][3]+ "," + xorData[i][4]+ "," + xorData[i][5]
 					+ ", actual=" + actual[0] + ",ideal=" + xorIdeal[i][0] + ",Su recomendación es: Nick Classic");
                         }
                         
 		}
 	}
-        //guarda solamente el ideal
+                //guarda solamente el ideal
 	static double[][] getIdeal() {
         final double array[][] = new double[filas][1];
 
@@ -85,6 +108,18 @@ public class XOR {
             array[i][3] = csv[i][3];
             array[i][4] = csv[i][4];
             array[i][5] = csv[i][5];
+        }
+        return array;
+    }
+        static double[][] getGrid3() {
+        final double array[][] = new double[filas][6];
+        for (int i = 0; i < filas - 1; i++) {
+            array[i][0] = csv2[i][0];
+            array[i][1] = csv2[i][1];
+            array[i][2] = csv2[i][2];
+            array[i][3] = csv2[i][3];
+            array[i][4] = csv2[i][4];
+            array[i][5] = csv2[i][5];
         }
         return array;
     }

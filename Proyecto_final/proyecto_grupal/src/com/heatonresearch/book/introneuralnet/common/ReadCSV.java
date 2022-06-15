@@ -120,4 +120,13 @@ public class ReadCSV {
 		return true;
 	}
 
+    public int rows(final String filename) throws IOException {
+        FileReader fr = new FileReader(filename);
+                BufferedReader bf = new BufferedReader(fr);
+                int cou = (int) bf.lines().count();
+                return cou;
+    }
+
+    
+
 }
