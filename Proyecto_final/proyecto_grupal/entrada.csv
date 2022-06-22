@@ -1,51 +1,50 @@
-pregunta1,pregunta2,pregunta3,pregunta4,pregunta5,pregunta6,ideal
-0.1,1,0.9,0.3,0.6,0.2,0.516666667
-0.6,0.3,1,0.1,0.2,0.9,0.516666667
-0.3,0.4,0.5,1,0.9,0.9,0.666666667
-1,0.4,0.4,0.1,0.4,0.2,0.416666667
-0.6,0.3,0.8,0.5,0.9,0.8,0.65
-0.8,0.8,1,0.1,0.3,0.8,0.633333333
-0.5,0.1,0.8,0.1,0.1,0.3,0.316666667
-0.9,0.4,0.6,0.2,0.9,0.5,0.583333333
-0.8,0.7,0.8,0.2,1,0.6,0.683333333
-0.1,0.4,0.3,0.7,0.7,0.8,0.5
-0.8,0.6,1,0.9,0.2,0.1,0.6
-0.3,0.8,0.6,0.9,0.1,0.2,0.483333333
-0.9,0.2,0.2,0.5,0.8,0.3,0.483333333
-0.2,0.7,0.7,0.2,0.8,0.2,0.466666667
-0.6,0.6,0.9,0.4,0.9,0.2,0.6
-1,0.7,0.1,0.9,0.2,0.9,0.633333333
-0.1,0.2,0.9,0.2,0.5,0.3,0.366666667
-1,0.7,0.8,0.5,0.3,0.3,0.6
-0.8,0.2,0.7,1,0.2,0.4,0.55
-1,0.4,0.9,1,0.7,1,0.833333333
-0.1,0.1,0.5,0.7,0.4,0.8,0.433333333
-0.2,0.4,0.4,0.6,0.7,0.6,0.483333333
-0.3,0.6,0.3,0.7,0.2,0.7,0.466666667
-0.1,0.6,0.9,0.1,0.6,0.2,0.416666667
-0.3,0.6,0.1,0.3,0.1,0.4,0.3
-1,0.1,0.1,0.8,0.2,1,0.533333333
-0.8,0.4,0.6,0.7,0.7,0.4,0.6
-0.9,0.6,0.1,0.2,1,0.6,0.566666667
-0.7,0.5,0.9,0.8,0.5,0.9,0.716666667
-0.2,0.4,0.6,0.5,1,0.8,0.583333333
-0.2,0.5,0.3,0.8,0.9,0.2,0.483333333
-0.1,0.6,0.2,0.6,0.2,1,0.45
-0.9,0.9,0.5,0.2,0.7,0.8,0.666666667
-0.2,0.6,0.6,0.1,0.6,0.3,0.4
-0.1,1,0.3,0.6,0.9,0.5,0.566666667
-0.4,0.5,1,0.9,0.7,0.7,0.7
-0.3,0.5,0.4,0.1,0.6,0.2,0.35
-1,1,0.5,0.9,0.2,0.1,0.616666667
-0.8,0.9,0.1,0.2,0.9,0.4,0.55
-1,0.9,0.3,0.9,0.1,0.6,0.633333333
-0.9,0.8,0.2,1,0.4,0.1,0.566666667
-0.5,1,0.8,0.4,0.1,0.3,0.516666667
-0.5,0.3,0.2,0.5,0.5,1,0.5
-0.2,0.1,0.3,0.2,0.5,0.6,0.316666667
-0.6,0.3,0.4,0.2,1,0.9,0.566666667
-0.4,0.8,0.5,1,0.9,0.1,0.616666667
-0.6,1,0.8,0.2,1,0.5,0.683333333
-0.4,0.7,0.1,0.7,0.5,0.5,0.483333333
-0.7,0.6,0.9,0.8,0.1,0.7,0.633333333
-0.7,0.8,0.1,0.8,0.6,0.9,0.65
+0.1,1,0.9,0.3,0.6,0.2, actual,0.660896306090634,ideal,0.66,Su recomendación es: Nick Classic
+0.6,0.3,1,0.1,0.2,0.9, actual,0.720643503236382,ideal,0.66,Su recomendación es: Nick Classic
+0.3,0.4,0.5,1,0.9,0.9, actual,0.997322929950762,ideal,1,Su recomendación es: Nick Classic
+1,0.4,0.4,0.1,0.4,0.2, actual,0.326729815908924,ideal,0.33,Su recomendación es: Disney XD
+0.6,0.3,0.8,0.5,0.9,0.8, actual,0.995415583976807,ideal,1,Su recomendación es: Nick Classic
+0.8,0.8,1,0.1,0.3,0.8, actual,0.294969967145878,ideal,0.33,Su recomendación es: Disney XD
+0.5,0.1,0.8,0.1,0.1,0.3, actual,0.650526897349776,ideal,0.66,Su recomendación es: Cartoon Network
+0.9,0.4,0.6,0.2,0.9,0.5, actual,0.959134345382808,ideal,1,Su recomendación es: Nick Classic
+0.8,0.7,0.8,0.2,1,0.6, actual,0.9127176875626,ideal,1,Su recomendación es: Nick Classic
+0.1,0.4,0.3,0.7,0.7,0.8, actual,0.998028648774561,ideal,1,Su recomendación es: Nick Classic
+0.8,0.6,1,0.9,0.2,0.1, actual,0.634048942490751,ideal,0.66,Su recomendación es: Cartoon Network
+0.3,0.8,0.6,0.9,0.1,0.2, actual,0.718028079754908,ideal,0.66,Su recomendación es: Nick Classic
+0.9,0.2,0.2,0.5,0.8,0.3, actual,0.298420749748183,ideal,0.33,Su recomendación es: Disney XD
+0.2,0.7,0.7,0.2,0.8,0.2, actual,0.887054967432633,ideal,1,Su recomendación es: Nick Classic
+0.6,0.6,0.9,0.4,0.9,0.2, actual,0.750733662150649,ideal,0.66,Su recomendación es: Nick Classic
+1,0.7,0.1,0.9,0.2,0.9, actual,0.373502256288747,ideal,0.33,Su recomendación es: Cartoon Network
+0.1,0.2,0.9,0.2,0.5,0.3, actual,0.618661659313092,ideal,0.66,Su recomendación es: Cartoon Network
+1,0.7,0.8,0.5,0.3,0.3, actual,0.401536608785741,ideal,0.33,Su recomendación es: Cartoon Network
+0.8,0.2,0.7,1,0.2,0.4, actual,0.714724383118942,ideal,0.66,Su recomendación es: Nick Classic
+1,0.4,0.9,1,0.7,1, actual,0.641703708898724,ideal,0.66,Su recomendación es: Cartoon Network
+0.1,0.1,0.5,0.7,0.4,0.8, actual,0.746615374048353,ideal,0.66,Su recomendación es: Nick Classic
+0.2,0.4,0.4,0.6,0.7,0.6, actual,0.972700118964478,ideal,1,Su recomendación es: Nick Classic
+0.3,0.6,0.3,0.7,0.2,0.7, actual,0.726634857702746,ideal,0.66,Su recomendación es: Nick Classic
+0.1,0.6,0.9,0.1,0.6,0.2, actual,0.83247249628701,ideal,0.66,Su recomendación es: Nick Classic
+0.3,0.6,0.1,0.3,0.1,0.4, actual,0.312021065974042,ideal,0.33,Su recomendación es: Disney XD
+1,0.1,0.1,0.8,0.2,1, actual,0.907858345776217,ideal,1,Su recomendación es: Nick Classic
+0.8,0.4,0.6,0.7,0.7,0.4, actual,0.642937875588911,ideal,0.66,Su recomendación es: Cartoon Network
+0.9,0.6,0.1,0.2,1,0.6, actual,0.984371007249883,ideal,1,Su recomendación es: Nick Classic
+0.7,0.5,0.9,0.8,0.5,0.9, actual,0.613682077228828,ideal,0.66,Su recomendación es: Cartoon Network
+0.2,0.4,0.6,0.5,1,0.8, actual,0.999945498318902,ideal,1,Su recomendación es: Nick Classic
+0.2,0.5,0.3,0.8,0.9,0.2, actual,0.630944296403133,ideal,0.66,Su recomendación es: Cartoon Network
+0.1,0.6,0.2,0.6,0.2,1, actual,0.829538156448922,ideal,1,Su recomendación es: Nick Classic
+0.9,0.9,0.5,0.2,0.7,0.8, actual,0.322508687452903,ideal,0.33,Su recomendación es: Disney XD
+0.2,0.6,0.6,0.1,0.6,0.3, actual,0.820542564724128,ideal,1,Su recomendación es: Nick Classic
+0.1,1,0.3,0.6,0.9,0.5, actual,0.939686189585523,ideal,1,Su recomendación es: Nick Classic
+0.4,0.5,1,0.9,0.7,0.7, actual,0.606403442277189,ideal,0.66,Su recomendación es: Cartoon Network
+0.3,0.5,0.4,0.1,0.6,0.2, actual,0.409274998563955,ideal,0.33,Su recomendación es: Cartoon Network
+1,1,0.5,0.9,0.2,0.1, actual,0.26788450531984,ideal,0.33,Su recomendación es: Disney XD
+0.8,0.9,0.1,0.2,0.9,0.4, actual,0.336630474543842,ideal,0.33,Su recomendación es: Cartoon Network
+1,0.9,0.3,0.9,0.1,0.6, actual,0.343537841023574,ideal,0.33,Su recomendación es: Cartoon Network
+0.9,0.8,0.2,1,0.4,0.1, actual,0.26822893596428,ideal,0.33,Su recomendación es: Disney XD
+0.5,1,0.8,0.4,0.1,0.3, actual,0.27468710095899,ideal,0.33,Su recomendación es: Disney XD
+0.5,0.3,0.2,0.5,0.5,1, actual,0.986989959341116,ideal,1,Su recomendación es: Nick Classic
+0.2,0.1,0.3,0.2,0.5,0.6, actual,0.949851712475303,ideal,1,Su recomendación es: Nick Classic
+0.6,0.3,0.4,0.2,1,0.9, actual,0.999916559757942,ideal,1,Su recomendación es: Nick Classic
+0.4,0.8,0.5,1,0.9,0.1, actual,0.672561390676409,ideal,0.66,Su recomendación es: Nick Classic
+0.6,1,0.8,0.2,1,0.5, actual,0.415257770719036,ideal,0.33,Su recomendación es: Cartoon Network
+0.4,0.7,0.1,0.7,0.5,0.5, actual,0.404971874552042,ideal,0.33,Su recomendación es: Cartoon Network
+0.7,0.6,0.9,0.8,0.1,0.7, actual,0.642834158513147,ideal,0.66,Su recomendación es: Cartoon Network
+0.7,0.8,0.1,0.8,0.6,0.9, actual,0.306053021498574,ideal,0.33,Su recomendación es: Disney XD
