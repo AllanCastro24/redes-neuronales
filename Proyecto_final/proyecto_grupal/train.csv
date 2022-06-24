@@ -1,50 +1,51 @@
- actual,0.73,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.16,Su recomendación es: Disney XD,0.33,0.33
- actual,0.74,Su recomendación es: Nick Classic,0.33,0.33
- actual,0.45,Su recomendación es: Cartoon Network,0.33,0.33
- actual,0.32,Su recomendación es: Disney XD,0.33,0.33
- actual,0.83,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.35,Su recomendación es: Cartoon Network,0.33,0.33
- actual,0.75,Su recomendación es: Nick Classic,1,1
- actual,0.45,Su recomendación es: Cartoon Network,0.33,0.33
- actual,0.89,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.80,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.59,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.60,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.24,Su recomendación es: Disney XD,0.33,0.33
- actual,0.77,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.60,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.99,Su recomendación es: Nick Classic,0.66,0.66
- actual,1.00,Su recomendación es: Nick Classic,1,1
- actual,0.59,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.74,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.52,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.06,Su recomendación es: Disney XD,0.33,0.33
- actual,0.51,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.65,Su recomendación es: Cartoon Network,0.33,0.33
- actual,0.57,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.21,Su recomendación es: Disney XD,0.33,0.33
- actual,0.99,Su recomendación es: Nick Classic,1,1
- actual,0.90,Su recomendación es: Nick Classic,0.33,0.33
- actual,0.29,Su recomendación es: Disney XD,0.33,0.33
- actual,0.71,Su recomendación es: Nick Classic,0.66,0.66
- actual,1.00,Su recomendación es: Nick Classic,1,1
- actual,0.19,Su recomendación es: Disney XD,0.33,0.33
- actual,0.75,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.46,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.16,Su recomendación es: Disney XD,0.33,0.33
- actual,0.07,Su recomendación es: Disney XD,0.33,0.33
- actual,0.75,Su recomendación es: Nick Classic,0.33,0.33
- actual,0.51,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.03,Su recomendación es: Disney XD,0.33,0.33
- actual,0.14,Su recomendación es: Disney XD,0.33,0.33
- actual,0.93,Su recomendación es: Nick Classic,1,1
- actual,0.45,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.55,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.60,Su recomendación es: Cartoon Network,0.33,0.33
- actual,0.63,Su recomendación es: Cartoon Network,0.66,0.66
- actual,0.98,Su recomendación es: Nick Classic,1,1
- actual,0.29,Su recomendación es: Disney XD,0.66,0.66
- actual,0.99,Su recomendación es: Nick Classic,0.66,0.66
- actual,0.09,Su recomendación es: Disney XD,0.33,0.33
- actual,0.42,Su recomendación es: Cartoon Network,0.66,0.66
+pregunta1,pregunta2,pregunta3,pregunta4,pregunta5,pregunta6,ideal,,,,,resul
+1,0.3,1,0.8,0.3,0.1,0.66,,0.15,0.4,0.015,0.66
+0.9,1,1,0.4,0.2,0.1,0.33,,0.45,0.2,0.01,0.33
+0.5,0.4,0.3,0.6,0.4,0.2,0.33,,0.1,0.09,0.04,0.33
+1,0.9,0.5,0.1,0.4,0.2,0.33,,0.45,0.025,0.04,0.33
+1,0.8,1,0.6,0.8,0.2,0.33,,0.4,0.3,0.08,0.33
+0.3,0.6,0.6,0.7,0.8,0.5,0.66,,0.09,0.21,0.2,0.66
+0.7,0.9,0.1,0.4,0.3,0.8,0.33,,0.315,0.02,0.12,0.33
+0.5,0.1,0.3,0.6,0.4,0.6,1,,0.025,0.09,0.12,1
+0.7,0.9,0.4,0.9,0.2,0.3,0.33,,0.315,0.18,0.03,0.33
+0.2,1,0.9,0.6,0.8,0.7,0.66,,0.1,0.27,0.28,1
+0.3,0.2,0.2,1,0.7,0.5,0.66,,0.03,0.1,0.175,1
+0.2,1,0.9,0.4,0.2,0.9,0.66,,0.1,0.18,0.09,0.66
+0.2,0.5,0.3,1,0.4,0.3,0.66,,0.05,0.15,0.06,0.66
+0.1,0.8,0.2,0.5,0.4,0.1,0.33,,0.04,0.05,0.02,0.66
+0.1,0.6,0.9,0.1,0.5,0.1,0.66,,0.03,0.045,0.025,0.66
+0.9,0.1,1,1,0.2,0.1,0.66,,0.045,0.5,0.01,0.66
+0.1,0.6,0.8,0.9,0.7,0.9,0.66,,0.03,0.36,0.315,0.66
+0.5,0.2,0.8,0.7,0.9,1,1,,0.05,0.28,0.45,1
+0.5,0.7,0.9,0.5,0.5,0.3,0.66,,0.175,0.225,0.075,0.66
+0.7,0.4,1,0.5,0.9,0.4,0.66,,0.14,0.25,0.18,0.66
+0.9,0.8,0.9,0.9,0.7,0.8,0.66,,0.36,0.405,0.28,0.66
+0.9,1,0.5,0.7,0.8,0.8,0.33,,0.45,0.175,0.32,0.33
+0.7,0.5,0.8,0.9,0.8,0.5,0.66,,0.175,0.36,0.2,0.66
+0.9,0.5,0.8,0.6,0.6,0.2,0.33,,0.225,0.24,0.06,0.66
+0.8,0.4,0.9,0.9,0.4,0.3,0.66,,0.16,0.405,0.06,0.66
+0.9,0.9,0.3,0.5,0.6,0.1,0.33,,0.405,0.075,0.03,0.33
+0.3,0.2,0.8,0.5,0.8,0.7,1,,0.03,0.2,0.28,1
+0.7,0.4,0.1,0.8,0.2,0.9,0.33,,0.14,0.04,0.09,0.33
+0.9,1,0.3,0.1,0.7,0.2,0.33,,0.45,0.015,0.07,0.33
+0.3,1,0.9,0.7,0.8,0.7,0.66,,0.15,0.315,0.28,0.66
+0.4,0.2,0.4,0.7,0.9,0.7,1,,0.04,0.14,0.315,1
+0.6,1,0.5,0.6,0.2,0.2,0.33,,0.3,0.15,0.02,0.33
+0.1,0.6,1,0.6,0.8,0.4,0.66,,0.03,0.3,0.16,0.66
+0.2,0.1,0.4,0.7,0.4,0.3,0.66,,0.01,0.14,0.06,0.66
+0.9,0.9,0.5,0.2,0.6,0.1,0.33,,0.405,0.05,0.03,0.33
+0.3,0.9,0.2,0.3,0.5,0.2,0.33,,0.135,0.03,0.05,0.33
+0.9,0.3,0.9,0.3,0.7,0.1,0.33,,0.135,0.135,0.035,0.66
+0.7,0.4,0.9,1,1,0.1,0.66,,0.14,0.45,0.05,0.66
+0.7,1,0.8,0.2,0.8,0.2,0.33,,0.35,0.08,0.08,0.33
+0.9,0.7,0.4,0.4,0.5,0.6,0.33,,0.315,0.08,0.15,0.33
+0.4,0.7,0.6,0.7,1,0.5,1,,0.14,0.21,0.25,1
+0.1,0.1,0.1,1,0.5,0.4,0.66,,0.005,0.05,0.1,1
+0.7,0.8,1,1,0.4,0.1,0.66,,0.28,0.5,0.02,0.66
+1,0.8,0.2,0.2,0.8,0.6,0.33,,0.4,0.02,0.24,0.33
+0.2,0.1,0.5,0.7,0.5,0.1,0.66,,0.01,0.175,0.025,0.66
+0.3,0.7,0.8,0.7,1,0.6,1,,0.105,0.28,0.3,1
+0.1,0.1,1,0.2,0.1,0.1,0.66,,0.005,0.1,0.005,0.66
+0.3,0.2,0.7,1,0.8,0.8,0.66,,0.03,0.35,0.32,0.66
+0.2,1,0.5,0.1,0.2,0.4,0.33,,0.1,0.025,0.04,0.33
+0.7,0.1,0.9,0.2,0.1,0.7,0.66,,0.035,0.09,0.035,0.66

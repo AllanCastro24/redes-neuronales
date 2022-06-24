@@ -4,6 +4,7 @@ import com.heatonresearch.book.introneuralnet.neural.feedforward.FeedforwardLaye
 import com.heatonresearch.book.introneuralnet.neural.feedforward.FeedforwardNetwork;
 import java.io.IOException;
 import com.heatonresearch.book.introneuralnet.common.ReadCSV;
+import com.heatonresearch.book.introneuralnet.neural.feedforward.train.anneal.NeuralSimulatedAnnealing;
 import com.heatonresearch.book.introneuralnet.neural.feedforward.train.genetic.TrainingSetNeuralGeneticAlgorithm;
 
 public class XOR {
@@ -66,8 +67,7 @@ public class XOR {
                 final double xorData2[][] = getGrid3();
                 final double xorIdeal[][] = getIdeal();
                 //se manda a entrenar con el metodo del recocio
-                //final NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(network, xorData, xorIdeal, 10, 2, 1000);
-		final TrainingSetNeuralGeneticAlgorithm train = new TrainingSetNeuralGeneticAlgorithm(network, true, xorData, xorIdeal, 500, 0.7, 0.3);
+                final NeuralSimulatedAnnealing train = new NeuralSimulatedAnnealing(network, xorData, xorIdeal, 10, 2, 1000);
                 //final Train train = new Backpropagation(network, xorData, xorIdeal,0.7, 0.9);
 		int epoch = 1;
 		do {
